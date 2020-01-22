@@ -1,0 +1,20 @@
+package com.thoughtworks;
+
+import org.junit.jupiter.api.Test;
+
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+public class NumberGeneratorTest {
+    @Test
+    public void should_return_list_with_four_different_numbers_and_range_0_to_9(){
+        NumberGenerator generator = new NumberGenerator();
+        List<Integer> answer = generator.generate();
+        assertEquals(4, answer.size());
+        Set<Integer> answerSet = new HashSet<>(answer);
+        assertEquals(4, answerSet.size());
+    }
+}

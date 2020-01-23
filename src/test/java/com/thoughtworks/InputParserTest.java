@@ -20,6 +20,6 @@ public class InputParserTest {
     @Test
     void should_raise_input_error_exception_given_input_contains_not_number() {
         InputParser parser = new InputParser();
-        assertThrows(InputErrorException.class, () -> parser.parse("1 2 3 一"));
+        assertThrows(NumberFormatException.class, () -> parser.parse("1 2 3 一"));
     }
 }

@@ -9,16 +9,11 @@ public class GuessHistoryPrinter {
     private List<GuessHistory> histories;
 
     public String getOutput() {
-        StringBuilder stringBuilder = new StringBuilder();
-        stringBuilder.append("Input")
-                .append("\t")
-                .append("Output")
-                .append(System.lineSeparator());
+        StringBuilder builder = new StringBuilder();
+        String separator = System.lineSeparator();
+        builder.append("Input").append("\t\t").append("Output").append(separator);
         histories.forEach(history ->
-                stringBuilder.append(history.getGuessInput())
-                        .append("\t")
-                        .append(history.getOutput())
-                        .append(System.lineSeparator()));
-        return stringBuilder.toString();
+                builder.append(history.getInput()).append("\t\t").append(history.getOutput()).append(separator));
+        return builder.toString();
     }
 }

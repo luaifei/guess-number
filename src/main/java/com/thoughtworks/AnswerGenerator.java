@@ -2,11 +2,10 @@ package com.thoughtworks;
 
 import java.util.Collections;
 import java.util.List;
-import java.util.Random;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
-public class NumberGenerator {
+public class AnswerGenerator {
 
     public List<Integer> generate() {
         List<Integer> seeds = IntStream.range(0, 9).boxed().collect(Collectors.toList());

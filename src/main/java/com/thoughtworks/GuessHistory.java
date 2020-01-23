@@ -6,6 +6,6 @@ import lombok.Getter;
 @AllArgsConstructor
 @Getter
 public class GuessHistory {
-    private String guessInput;
+    private String input;
     private String output;
 }

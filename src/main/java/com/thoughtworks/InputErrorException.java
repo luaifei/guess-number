@@ -5,3 +5,4 @@ public class InputErrorException extends RuntimeException {
         super("Wrong Input, input again");
     }
 }
+

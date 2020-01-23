@@ -8,10 +8,10 @@ import java.util.Set;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class NumberGeneratorTest {
+public class AnswerGeneratorTest {
     @Test
     public void should_return_list_with_four_different_numbers_and_range_0_to_9(){
-        NumberGenerator generator = new NumberGenerator();
+        AnswerGenerator generator = new AnswerGenerator();
         List<Integer> answer = generator.generate();
         assertEquals(4, answer.size());
         Set<Integer> answerSet = new HashSet<>(answer);
